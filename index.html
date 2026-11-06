@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="الصفحة الرسمية لروابط وأرقام التواصل مع Ari Mall">
+
+    <meta name="theme-color" content="#111827">
+
+    <title>Ari Mall | الروابط الرسمية</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            padding: 30px 16px;
+            font-family: Arial, Tahoma, sans-serif;
+            background:
+                radial-gradient(circle at top, #374151 0%, #111827 48%, #030712 100%);
+            color: #ffffff;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 560px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .brand-card {
+            margin-bottom: 22px;
+            padding: 28px 20px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 24px;
+            background: rgba(17, 24, 39, 0.78);
+            box-shadow: 0 18px 50px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo-placeholder {
+            display: flex;
+            width: 112px;
+            height: 112px;
+            margin: 0 auto 18px;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f59e0b, #ef4444);
+            color: #ffffff;
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: 36px;
+        }
+
+        .description {
+            max-width: 430px;
+            margin: 0 auto;
+            color: #d1d5db;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .section-title {
+            margin: 30px 0 14px;
+            color: #f9fafb;
+            font-size: 21px;
+        }
+
+        .link-button {
+            display: flex;
+            width: 100%;
+            min-height: 62px;
+            margin: 13px 0;
+            padding: 14px 18px;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            background: #ffffff;
+            color: #111827;
+            text-decoration: none;
+            text-align: right;
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease,
+                background 0.2s ease;
+        }
+
+        .link-button:hover,
+        .link-button:focus {
+            background: #f3f4f6;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+            transform: translateY(-2px);
+            outline: none;
+        }
+
+        .link-button:focus-visible {
+            outline: 3px solid #fbbf24;
+            outline-offset: 3px;
+        }
+
+        .button-content {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+        }
+
+        .icon {
+            display: flex;
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background: #111827;
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        .button-text {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .button-title {
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .button-detail {
+            color: #6b7280;
+            font-size: 14px;
+            direction: ltr;
+            text-align: right;
+        }
+
+        .arrow {
+            color: #6b7280;
+            font-size: 22px;
+        }
+
+        .instagram .icon {
+            background: linear-gradient(
+                135deg,
+                #833ab4,
+                #fd1d1d,
+                #fcb045
+            );
+        }
+
+        .facebook .icon {
+            background: #1877f2;
+        }
+
+        .whatsapp .icon {
+            background: #25d366;
+        }
+
+        .email .icon {
+            background: #ea4335;
+        }
+
+        .ari-phone .icon {
+            background: #7c3aed;
+        }
+
+        .orders .icon {
+            background: #f59e0b;
+        }
+
+        .accounting .icon {
+            background: #2563eb;
+        }
+
+        .restaurant .icon {
+            background: #dc2626;
+        }
+
+        .bus .icon {
+            background: #059669;
+        }
+
+        .privacy-notice {
+            margin-top: 28px;
+            padding: 16px;
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            border-radius: 14px;
+            background: rgba(251, 191, 36, 0.08);
+            color: #fde68a;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 20px 10px;
+            color: #9ca3af;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 20px 12px;
+            }
+
+            .brand-card {
+                padding: 24px 16px;
+            }
+
+            h1 {
+                font-size: 31px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .link-button {
+                min-height: 60px;
+                padding: 12px 14px;
+            }
+
+            .button-title {
+                font-size: 16px;
+            }
+
+            .button-detail {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="brand-card">
+
+            <div class="logo-placeholder" aria-label="Ari Mall">
+                AM
+            </div>
+
+            <h1>Ari Mall</h1>
+
+            <p class="description">
+                مرحباً بكم في Ari Mall.
+                تابعونا على حساباتنا الرسمية، تواصلوا مع الأقسام،
+                أو اتصلوا مباشرة بالرقم المطلوب.
+            </p>
+
+        </header>
+
+        <section aria-labelledby="social-media-title">
+
+            <h2 class="section-title" id="social-media-title">
+                حساباتنا الرسمية
+            </h2>
+
+            <a class="link-button instagram"
+               href="https://www.instagram.com/1.ari.mol.2005.3?utm_source=qr&amp;mdxt=MWZtZ2FsMDd2bWF0NA=="
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="زيارة حساب Ari Mall على Instagram">
+
+                <span class="button-content">
+                    <span class="icon" aria-hidden="true">◎</span>
+
+                    <span class="button-text">
+                        <span class="button-title">Instagram</span>
+                        <span class="button-detail">
+                            @1.ari.mol.2005.3
+                        </span>
+                    </span>
+                </span>
+
+                <span class="arrow" aria-hidden="true">‹</span>
+            </a>
+
+            <a class="link-button facebook"
+               href="https://www.facebook.com/share/1DckruKVp5/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="زيارة Ari Mall على Facebook">
+
+                <span class="button-content">
+                    <span class="icon" aria-hidden="true">f</span>
+
+                    <span class="button-text">
+                        <span class="button-title">Facebook</span>
+                        <span class="button-detail">
+                            الصفحة الرسمية
+                        </span>
+                    </span>
+                </span>
+
+                <span class="arrow" aria-hidden="true">‹</span>
+            </a>
+
+            <a class="link-button whatsapp"
+               href="https://chat.whatsapp.com/BIU0O5oj294YSzglJHTi6?s=sh&amp;p=a&amp;iam=2"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="الانضمام إلى مجموعة Ari Mall على WhatsApp">
+
+                <span class="button-content">
+                    <span class="icon" aria-hidden="true">☎</span>
+
+                    <span class="button-text">
+                        <span class="button-title">
+                            مجموعة WhatsApp
+                        </span>
+
+                        <span class="button-detail">
+                            الانضمام إلى مجموعة Ari Mall
+                        </span>
+                    </span>
+                </span>
+
+                <span class="arrow" aria-hidden="true">‹</span>
+            </a>
+
+        </section>
+
+        <section aria-labelledby="contact-title">
+
+            <h2 class="section-title" id="contact-title">
+                البريد الإلكتروني
+            </h2>
+
+            <a class="link-button email"
+               href="mailto:aree48aa@gmail.com?subject=Contact%20Ari%20Mall"
+               aria-label="إرسال بريد إلكتروني إلى Ari Mall">
+
+                <span class="button-content">
+                    <span class="icon" aria-hidden="true">✉</span>
+
+                    <span class="button-text">
+                        <span class="button-title">
+                            مراسلتنا عبر البريد
+                        </span>
+
+                        <span class="button-detail">
+                            aree48aa@gmail.com
+                        </span>
+                    </span>
+                </span>
+
+                <span class="arrow" aria-hidden="true">‹</span>
+            </a>
+
+        </section>
+
+        <section aria-labelledby="phone-title">
+
+            <h2 class="section-title" id="phone-title">
+                أرقام التواصل
+            </h2>
+
+            <a class="link-button ari-phone"
+               href="tel:+963932808116"
+               aria-label="الاتصال بالرقم الرئيسي لـ Ari Mall">
+
+                <span class="button-content">
+                    <span class="icon" aria-hidden="true">☎</span>
+
+                    <span class="button-text">
+                        <span class="button-title">
+                            Ari Mall
+                        </span>
+
+                        <span class="button-detail">
+                            0932808116
+                        </span>
+                    </span>
+                </span>
+
+                <span class="arrow" aria-hidden="true">‹</span>
+            </a>
+
+            <a class="link-button orders"
+               href="tel:+963937565959"
+               aria-label="الاتصال بقسم الطلبات في Ari Mall">
+
+                <span class="button-content">
+                    <span class="icon" aria-hidden="true">🛒</span>
+
+                    <span class="button-text">
+                        <span class="button-title">
+                            الطلبات
+                        </span>
+
+                        <span class="button-detail">
+                            0937565959
+                        </span>
+                    </span>
+                </span>
+
+                <span class="arrow" aria-hidden="true">‹</span>
+            </a>
+
+            <a class="link-button accounting"
+               href="tel:+963993367735"
+               aria-label="الاتصال بقسم المحاسبة في Ari Mall">
+
+                <span class="button-content">
+                    <span class="icon" aria-hidden="true">₿</span>
+
+                    <span class="button-text">
+                        <span class="button-title">
+                            المحاسبة
+                        </span>
+
+                        <span class="button-detail">
+                            0993367735
+                        </span>
+                    </span>
+                </span>
+
+                <span class="arrow" aria-hidden="true">‹</span>
+            </a>
+
+            <a class="link-button restaurant"
+               href="tel:+963984046615"
+               aria-label="الاتصال بمطعم Ari Mall">
+
+                <span class="button-content">
+                    <span class="icon" aria-hidden="true">♨</span>
+
+                    <span class="button-text">
+                        <span class="button-title">
+                            المطعم
+                        </span>
+
+                        <span class="button-detail">
+                            0984046615
+                        </span>
+                    </span>
+                </span>
+
+                <span class="arrow" aria-hidden="true">‹</span>
+            </a>
+
+            <a class="link-button bus"
+               href="tel:+963984708814"
+               aria-label="الاتصال بقسم حجز تذاكر الحافلات">
+
+                <span class="button-content">
+                    <span class="icon" aria-hidden="true">▣</span>
+
+                    <span class="button-text">
+                        <span class="button-title">
+                            حجز تذاكر الحافلات
+                        </span>
+
+                        <span class="button-detail">
+                            0984708814
+                        </span>
+                    </span>
+                </span>
+
+                <span class="arrow" aria-hidden="true">‹</span>
+            </a>
+
+        </section>
+
+        <div class="privacy-notice">
+            يرجى عدم إرسال كلمات المرور، أرقام البطاقات، أو المعلومات
+            المصرفية الحساسة عبر البريد الإلكتروني أو مجموعة WhatsApp.
+        </div>
+
+        <footer>
+            <div>© 2026 Ari Mall</div>
+            <div>جميع الروابط وأرقام التواصل مخصصة لخدمات Ari Mall.</div>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
